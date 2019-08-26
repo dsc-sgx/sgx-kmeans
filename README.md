@@ -13,3 +13,8 @@
   g++ kmeans.cpp -o kmeans
 ```
 or using other compilers such as icpc from Intel.
+
+To run:
+```
+  ./kmeans inputdata.txt 7
+```
