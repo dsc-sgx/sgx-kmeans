@@ -1,0 +1,15 @@
+enclave {
+    from "Sealing/Sealing.edl" import *;
+
+    trusted {
+        /* define ECALLs here. ECALLS are calls executed from outside of the enclave, which
+           should be performed inside the enclave */
+        public void secure_kmeans([in, count=ndata] float** data, int npoints, int k, size_t ndata);
+    };
+
+    untrusted {
+        /* define OCALLs here. OCALLs are executed from within enclave on insecure methods, that is
+           methods located outside the enclave. */
+        void print_message([in, string] const char* str);
+    };
+};
