@@ -1,6 +1,6 @@
 # sgx-kmeans
 ## Build and run sgx-kmeans
-Modify the Makefile for the values of SGX_SDK and SGX_MODE first.
+Modify the Makefile for the values of SGX_SDK (point to the sdk location) and SGX_MODE (SIM or HW) first.
 ```
   make clean; make
   ./app inputdata.txt 7
